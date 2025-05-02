@@ -37,7 +37,7 @@ body {
   perspective: 500px;
 }
 
-.items.active {
+.items:active {
   background: rgba(255,255,255,0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
@@ -45,6 +45,7 @@ body {
 }
 
 .item {
+	/* position:relative; */
   width: 200px;
   height: calc(100% - 40px);
   display: inline-flex;
@@ -54,7 +55,11 @@ body {
   font-weight: 100;
   color: rgba(0,0,0,0.15);
   box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
+	/* cursor:grab; */
 }
+/* .item:active{
+	cursor:grabbing;
+} */
 
 .item:nth-child(9n+1) { background: dodgerblue;}
 .item:nth-child(9n+2) { background: goldenrod;}
